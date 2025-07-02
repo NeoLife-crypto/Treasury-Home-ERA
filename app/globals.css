@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #1e40af;
+  --primary-red: #dc2626;
+  --light-blue: #3b82f6;
+  --light-red: #ef4444;
+}
+
+.dark {
+  --primary-blue: #3b82f6;
+  --primary-red: #ef4444;
+  --light-blue: #60a5fa;
+  --light-red: #f87171;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.era-gradient {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-red) 100%);
+}
+
+.era-blue {
+  color: var(--primary-blue);
+}
+
+.era-red {
+  color: var(--primary-red);
+}
+
+.era-bg-blue {
+  background-color: var(--primary-blue);
+}
+
+.era-bg-red {
+  background-color: var(--primary-red);
+}
